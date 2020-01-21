@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class task extends Model
+class Task extends Model
 
 {
   protected $fillable = [
@@ -14,6 +14,6 @@ class task extends Model
 
   // Task model
   public function employee() {
-        return $this -> belongsTo(Employee::class);
+  return $this -> belongsTo(Employee::class);
   }
 }

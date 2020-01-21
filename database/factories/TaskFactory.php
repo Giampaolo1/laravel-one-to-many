@@ -9,7 +9,7 @@ use App\Task;
 
 $factory->define(Task::class, function (Faker $faker) {
     return [
-      'title' => $faker -> title,
-      'lastname' => $faker -> description,
+      'name' => $faker -> word,
+      'description' => $faker -> sentence,
     ];
 });

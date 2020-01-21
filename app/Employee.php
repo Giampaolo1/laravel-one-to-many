@@ -12,7 +12,7 @@ class Employee extends Model
     "lastname"
   ];
 
-  // Employee model
+  // Employee model (task al plurale)
   public function tasks() {
           return $this -> hasMany(Task::class);
   }
