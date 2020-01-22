@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
       $this->call ([
+        // molto importante che sia sequenziale qui
         EmployeeSeeder::class,
         TaskSeeder::class
       ]);

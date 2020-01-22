@@ -14,9 +14,11 @@ class TaskSeeder extends Seeder
     public function run()
     {
       factory(Task::class, 100)
+      // classico modello da callback
             -> make()
             -> each(function($task) {
           $emp = Employee::inRandomOrder() -> first();
+          // freccia 2 cose
           $task -> employee() -> associate($emp);
           $task -> save();
       });
