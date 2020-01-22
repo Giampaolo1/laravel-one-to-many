@@ -17,7 +17,7 @@ class CreateEmployeTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->string("name");
-            $table->string("surname");
+            $table->string("lastname");
 
         });
     }
